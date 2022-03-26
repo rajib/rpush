@@ -4,9 +4,12 @@ module Rpush
       extend ServiceConfigMethods
 
       HOSTS = {
-        production: ['gateway.push.apple.com', 2195],
-        development: ['gateway.sandbox.push.apple.com', 2195], # deprecated
-        sandbox: ['gateway.sandbox.push.apple.com', 2195]
+        production: ['api.push.apple.com', 443],
+        development: ['api.sandbox.push.apple.com', 443], # deprecated
+        sandbox: ['api.sandbox.push.apple.com', 443]
+        # production: 'https://api.push.apple.com:443',
+        # development: 'https://api.sandbox.push.apple.com:443',
+        # sandbox: 'https://api.sandbox.push.apple.com:443'        
       }
 
       batch_deliveries true
